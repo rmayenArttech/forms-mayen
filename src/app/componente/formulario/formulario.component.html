@@ -24,7 +24,7 @@
                         <mat-label>Apellido Paterno</mat-label>
                         <input type="text" matInput [formControl]="apellidoPaternoFC" [errorStateMatcher]="matcher"
                             placeholder="Ejemplo. Mayen">
-                        <mat-error *ngIf="apellidoPaternoFC.hasError('email') && !apellidoPaternoFC.hasError('required')">
+                        <mat-error *ngIf="apellidoPaternoFC.hasError('apellidoPaterno') && !apellidoPaternoFC.hasError('required')">
                             Por favor ingrese un nombre
                         </mat-error>
                         <mat-error *ngIf="apellidoPaternoFC.hasError('required')">
@@ -44,7 +44,7 @@
                         <mat-label>Email</mat-label>
                         <input type="email" matInput [formControl]="mailFC" [errorStateMatcher]="matcher"
                             placeholder="Ejemplo rmayen@example.com">
-                        <mat-error *ngIf="mailFC.hasError('email') && !mailFC.hasError('required')">
+                        <mat-error *ngIf="mailFC.hasError('mail') && !mailFC.hasError('required')">
                             Ingrese direccion de correo valido
                         </mat-error>
                         <mat-error *ngIf="mailFC.hasError('required')">
@@ -55,7 +55,7 @@
                         <mat-label>Telefono</mat-label>
                         <input type="text" matInput [formControl]="telefonoFC" [errorStateMatcher]="matcher"
                             placeholder="Ejemplo 5512345678">
-                        <mat-error *ngIf="telefonoFC.hasError('email') && !telefonoFC.hasError('required')">
+                        <mat-error *ngIf="telefonoFC.hasError('telefono') && !telefonoFC.hasError('required')">
                             Ingrese numero de telefono valido
                         </mat-error>
                         <mat-error *ngIf="telefonoFC.hasError('required')">
@@ -71,7 +71,7 @@
                         <mat-label>Avenida principal</mat-label>
                         <input type="email" matInput [formControl]="avenidaFC" [errorStateMatcher]="matcher"
                             placeholder="Ejemplo Felix Cuavas">
-                        <mat-error *ngIf="avenidaFC.hasError('email') && !avenidaFC.hasError('required')">
+                        <mat-error *ngIf="avenidaFC.hasError('avenida') && !avenidaFC.hasError('required')">
                             Ingrese nombre de avenida
                         </mat-error>
                         <mat-error *ngIf="avenidaFC.hasError('required')">
@@ -82,7 +82,7 @@
                         <mat-label>Numero ext.</mat-label>
                         <input type="text" matInput [formControl]="numeroFC" [errorStateMatcher]="matcher"
                             placeholder="Ejemplo 5512345678">
-                        <mat-error *ngIf="numeroFC.hasError('email') && !numeroFC.hasError('required')">
+                        <mat-error *ngIf="numeroFC.hasError('numero') && !numeroFC.hasError('required')">
                             Ingrese numero exterior
                         </mat-error>
                         <mat-error *ngIf="numeroFC.hasError('required')">
@@ -93,7 +93,7 @@
                         <mat-label>Codigo Postal</mat-label>
                         <input type="text" matInput [formControl]="cpFC" [errorStateMatcher]="matcher"
                             placeholder="Ejemplo 5512345678">
-                        <mat-error *ngIf="cpFC.hasError('email') && !cpFC.hasError('required')">
+                        <mat-error *ngIf="cpFC.hasError('cp') && !cpFC.hasError('required')">
                             Ingrese codigo postal
                         </mat-error>
                         <mat-error *ngIf="cpFC.hasError('required')">
@@ -108,7 +108,7 @@
                         <mat-label>Colonia</mat-label>
                         <input type="email" matInput [formControl]="coloniaFC" [errorStateMatcher]="matcher"
                             placeholder="Ejemplo Alvaro Obregon">
-                        <mat-error *ngIf="coloniaFC.hasError('email') && !coloniaFC.hasError('required')">
+                        <mat-error *ngIf="coloniaFC.hasError('colonia') && !coloniaFC.hasError('required')">
                             Ingrese nombre de la colonia
                         </mat-error>
                         <mat-error *ngIf="coloniaFC.hasError('required')">
@@ -119,7 +119,7 @@
                         <mat-label>Ciudad</mat-label>
                         <input type="text" matInput [formControl]="ciudadFC" [errorStateMatcher]="matcher"
                             placeholder="Ejemplo Ciudad de Mexico">
-                        <mat-error *ngIf="ciudadFC.hasError('email') && !ciudadFC.hasError('required')">
+                        <mat-error *ngIf="ciudadFC.hasError('ciudad') && !ciudadFC.hasError('required')">
                             Ingrese la ciudad
                         </mat-error>
                         <mat-error *ngIf="ciudadFC.hasError('required')">
@@ -130,7 +130,7 @@
                         <mat-label>Municipio</mat-label>
                         <input type="text" matInput [formControl]="municipioFC" [errorStateMatcher]="matcher"
                             placeholder="Ejemplo 5512345678">
-                        <mat-error *ngIf="municipioFC.hasError('email') && !municipioFC.hasError('required')">
+                        <mat-error *ngIf="municipioFC.hasError('municipio') && !municipioFC.hasError('required')">
                             Ingrese municipio
                         </mat-error>
                         <mat-error *ngIf="municipioFC.hasError('required')">
@@ -155,7 +155,7 @@
                         <mat-label>Grupo</mat-label>
                         <input type="text" matInput [formControl]="grupoFC" [errorStateMatcher]="matcher"
                             placeholder="Ejemplo GC01">
-                        <mat-error *ngIf="grupoFC.hasError('email') && !grupoFC.hasError('required')">
+                        <mat-error *ngIf="grupoFC.hasError('grupo') && !grupoFC.hasError('required')">
                             Ingrese clave de grupo
                         </mat-error>
                         <mat-error *ngIf="grupoFC.hasError('required')">
@@ -166,7 +166,7 @@
                         <mat-label>Matricula</mat-label>
                         <input type="text" matInput [formControl]="matriculaFC" [errorStateMatcher]="matcher"
                             placeholder="Ejemplo 223236038">
-                        <mat-error *ngIf="matriculaFC.hasError('email') && !matriculaFC.hasError('required')">
+                        <mat-error *ngIf="matriculaFC.hasError('matricula') && !matriculaFC.hasError('required')">
                             Ingrese matricula
                         </mat-error>
                         <mat-error *ngIf="matriculaFC.hasError('required')">
